@@ -1,0 +1,46 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden; /* Prevent scrolling */
+}
+
+.background-viewer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    /* pointer-events: none;  */
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #000; /* Ensure text is readable on dark background */
+    position: relative;
+    z-index: 1; /* Ensure text is above the background */
+}
+
+footer {
+    text-align: center;
+    padding: 0.5rem;
+    background-color: rgba(0, 0, 0, 0.5); /* Optional: Adds a semi-transparent background to the footer */
+    color: #fff; /* Ensure footer text is readable */
+    position: relative;
+    z-index: 1; /* Ensure footer is above the background */
+}
